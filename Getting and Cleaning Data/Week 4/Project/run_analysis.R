@@ -132,5 +132,5 @@ mean_df <- df %>% select(subject,tBodyAccMean_X,tBodyAccMean_Y,tBodyAccMean_Z,
             fBodyBodyGyroJerkMagStd = mean(fBodyBodyGyroJerkMagStd))
 
 # Write the data frame to text and CSV files for submission
-write.table(mean_df, file = "Project_Submission.txt", sep = "\t")
-write.csv(mean_df, file = "Project_Submission.csv")
+write.table(mean_df, file = "Project_Submission.txt", row.names = FALSE, sep = " ")
+#write.csv(mean_df, file = "Project_Submission.csv")
